@@ -233,8 +233,6 @@
 /ip dns static add address-list=vpn_access match-subdomain=yes name=tg.dev type=FWD comment=Telegram
 /ip dns static add address-list=vpn_access match-subdomain=yes name=cdn-telegram.org type=FWD comment=Telegram
 /ip dns static add address-list=vpn_access match-subdomain=yes name=telegra.ph type=FWD comment=Telegram
-/ip dns static add address-list=vpn_access match-subdomain=yes name=149.154.160.0/20 type=FWD comment=Telegram
-/ip dns static add address-list=vpn_access match-subdomain=yes name=91.108.0.0/16 type=FWD comment=Telegram
 /ip dns static add address-list=vpn_access match-subdomain=yes name=desktop.telegram.org type=FWD comment=Telegram
 /ip firewall address-list add address=static.whatsapp.net list=vpn_access comment=WhatsApp
 /ip firewall address-list add address=g.whatsapp.net list=vpn_access comment=WhatsApp
