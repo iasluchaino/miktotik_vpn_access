@@ -1,4 +1,3 @@
-# Youtube
 /ip firewall address-list add address=yt.be list=vpn_access comment="Youtube"
 /ip firewall address-list add address=ggpht.com list=vpn_access comment="Youtube"
 /ip firewall address-list add address=gvt1.com list=vpn_access comment="Youtube"
@@ -19,7 +18,6 @@
 /ip firewall address-list add address=yt3.googleusercontent.com list=vpn_access comment="Youtube"
 /ip firewall address-list add address=www.gstatic.com list=vpn_access comment="Youtube"
 /ip firewall address-list add address=i.ytimg.com list=vpn_access comment="Youtube"
-
 /ip dns static add address-list=vpn_access match-subdomain=yes name=yt.be type=FWD comment="Youtube"
 /ip dns static add address-list=vpn_access match-subdomain=yes name=ggpht.com type=FWD comment="Youtube"
 /ip dns static add address-list=vpn_access match-subdomain=yes name=gvt1.com type=FWD comment="Youtube"
@@ -40,8 +38,6 @@
 /ip dns static add address-list=vpn_access match-subdomain=yes name=yt3.googleusercontent.com type=FWD comment="Youtube"
 /ip dns static add address-list=vpn_access match-subdomain=yes name=www.gstatic.com type=FWD comment="Youtube"
 /ip dns static add address-list=vpn_access match-subdomain=yes name=i.ytimg.com type=FWD comment="Youtube"
-
-# X
 /ip firewall address-list add address=twitter.com list=vpn_access comment="Twitter"
 /ip firewall address-list add address=x.com list=vpn_access comment="Twitter"
 /ip firewall address-list add address=twimg.com list=vpn_access comment="Twitter CDN"
@@ -57,7 +53,6 @@
 /ip firewall address-list add address=video.twimg.com.cdn.cloudflare.net list=vpn_access comment="Twitter CDN"
 /ip firewall address-list add address=api-stream.twitter.com list=vpn_access comment="Twitter API"
 /ip firewall address-list add address=twitter.map.fastly.net list=vpn_access comment="Twitter CDN"
-
 /ip dns static add address-list=vpn_access match-subdomain=yes name=twitter.com type=FWD comment="Twitter"
 /ip dns static add address-list=vpn_access match-subdomain=yes name=x.com type=FWD comment="Twitter"
 /ip dns static add address-list=vpn_access match-subdomain=yes name=twimg.com type=FWD comment="Twitter CDN"
@@ -68,8 +63,6 @@
 /ip dns static add address-list=vpn_access match-subdomain=yes name=api-stream.twitter.com type=FWD comment="Twitter CDN"
 /ip dns static add address-list=vpn_access match-subdomain=yes name=dualstack.video.twitter.map.fastly.net type=FWD comment="Twitter CDN"
 /ip dns static add address-list=vpn_access match-subdomain=yes name=video.twimg.com.cdn.cloudflare.net type=FWD comment="Twitter CDN"
-
-# Chatgpt
 /ip firewall address-list add address=chatgpt.com list=vpn_access comment="Chatgpt"
 /ip firewall address-list add address=openai.com list=vpn_access comment="Chatgpt"
 /ip firewall address-list add address=auth0.openai.com list=vpn_access comment="Chatgpt"
@@ -84,7 +77,6 @@
 /ip firewall address-list add address=oaiusercontent.com list=vpn_access comment="Chatgpt"
 /ip firewall address-list add address=api.openai.com list=vpn_access comment="Chatgpt"
 /ip firewall address-list add address=chat.openai.com.cdn.cloudflare.net list=vpn_access comment="Chatgpt"
-
 /ip dns static add address-list=vpn_access match-subdomain=yes name=chatgpt.com type=FWD comment="Chatgpt"
 /ip dns static add address-list=vpn_access match-subdomain=yes name=openai.com type=FWD comment="Chatgpt"
 /ip dns static add address-list=vpn_access match-subdomain=yes name=auth0.openai.com type=FWD comment="Chatgpt"
@@ -99,8 +91,6 @@
 /ip dns static add address-list=vpn_access match-subdomain=yes name=api.openai.com type=FWD comment="Chatgpt"
 /ip dns static add address-list=vpn_access match-subdomain=yes name=oaiusercontent.com  type=FWD comment="Chatgpt"
 /ip dns static add address-list=vpn_access match-subdomain=yes name=chat.openai.com.cdn.cloudflare.net  type=FWD comment="Chatgpt"
-
-# Facebook + Instagram
 /ip firewall address-list add address=dgw.c10r.facebook.com list=vpn_access comment="Facebook"
 /ip firewall address-list add address=mqtt.c10r.facebook.com list=vpn_access comment="Facebook"
 /ip firewall address-list add address=z-p42-chat-e2ee-ig.facebook.com list=vpn_access comment="Facebook"
@@ -152,7 +142,6 @@
 /ip firewall address-list add address=c10r.facebook.com list=vpn_access comment="Facebook"
 /ip firewall address-list add address=cdninstagram.com list=vpn_access comment="Facebook"
 /ip firewall address-list add address=fbcdn.net  list=vpn_access comment="Facebook"
-
 /ip dns static add address-list=vpn_access match-subdomain=yes name=c10r.facebook.com type=FWD comment="Facebook"
 /ip dns static add address-list=vpn_access match-subdomain=yes name=www.facebook.com type=FWD comment="Facebook"
 /ip dns static add address-list=vpn_access match-subdomain=yes name=facebook.com type=FWD comment="Facebook"
@@ -180,8 +169,6 @@
 /ip dns static add address-list=vpn_access match-subdomain=yes name=c10r.facebook.com type=FWD comment="Facebook"
 /ip dns static add address-list=vpn_access match-subdomain=yes name=cdninstagram.com type=FWD comment="Facebook"
 /ip dns static add address-list=vpn_access match-subdomain=yes name=fbcdn.net type=FWD comment="Facebook"
-
-# Misc & Tech
 /ip firewall address-list add address=nnmclub.to list=vpn_access comment="NNMClub"
 /ip firewall address-list add address=rutracker.org list=vpn_access comment="RuTracker"
 /ip firewall address-list add address=rutrk.org list=vpn_access comment="RuTracker"
@@ -195,8 +182,6 @@
 /ip firewall address-list add address=s-cdn.anthropic.com list=vpn_access comment="claude.ai"
 /ip firewall address-list add address=login.tailscale.com list=vpn_access comment="tailscale"
 /ip firewall address-list add address=packages.bacularis.app list=vpn_access comment="Bacularis"
-
-
 /ip dns static add address-list=vpn_access match-subdomain=yes name=theins.ru type=FWD comment="TheIns"
 /ip dns static add address-list=vpn_access match-subdomain=yes name=nnmclub.to type=FWD comment="NNMClub"
 /ip dns static add address-list=vpn_access match-subdomain=yes name=static.rutracker.cc type=FWD comment="RuTracker"
@@ -211,8 +196,6 @@
 /ip dns static add address-list=vpn_access match-subdomain=yes name=s-cdn.anthropic.com type=FWD comment="claude.ai"
 /ip dns static add address-list=vpn_access match-subdomain=yes name=login.tailscale.com type=FWD comment="tailscale"
 /ip dns static add address-list=vpn_access match-subdomain=yes name=packages.bacularis.app type=FWD comment="Bacularis"
-
-# Kino.pub
 /ip firewall address-list add address=kino.pub list=vpn_access comment="Kino.pub"
 /ip firewall address-list add address=vjs.zencdn.net list=vpn_access comment="Kino.pub"
 /ip firewall address-list add address=cdntogo.net  list=vpn_access comment="Kino.pub"
@@ -222,7 +205,6 @@
 /ip firewall address-list add address=cdnservices.link list=vpn_access comment="Kino.pub"
 /ip firewall address-list add address=s.pushbr.com list=vpn_access comment="Kino.pub"
 /ip firewall address-list add address=pushbr.com list=vpn_access comment="Kino.pub"
-
 /ip dns static add address-list=vpn_access match-subdomain=yes name=kino.pub type=FWD comment="Kino.pub"
 /ip dns static add address-list=vpn_access match-subdomain=yes name=cdn.jsdelivr.net type=FWD comment="Kino.pub"
 /ip dns static add address-list=vpn_access match-subdomain=yes name=m.pushbr.com type=FWD comment="Kino.pub"
@@ -232,8 +214,6 @@
 /ip dns static add address-list=vpn_access match-subdomain=yes name=cdn2cdn.com type=FWD comment="Kino.pub"
 /ip dns static add address-list=vpn_access match-subdomain=yes name=s.pushbr.com type=FWD comment="Kino.pub"
 /ip dns static add address-list=vpn_access match-subdomain=yes name=pushbr.com type=FWD comment="Kino.pub"
-
-# Telegram
 /ip firewall address-list add address=telegram.org list=vpn_access comment=Telegram
 /ip firewall address-list add address=api.telegram.org list=vpn_access comment=Telegram
 /ip firewall address-list add address=t.me list=vpn_access comment=Telegram
@@ -245,8 +225,6 @@
 /ip firewall address-list add address=149.154.160.0/20 list=vpn_access comment=Telegram
 /ip firewall address-list add address=91.108.0.0/16 list=vpn_access comment=Telegram
 /ip firewall address-list add address=desktop.telegram.org list=vpn_access comment=Telegram
-
-
 /ip dns static add address-list=vpn_access match-subdomain=yes name=telegram.org type=FWD comment=Telegram
 /ip dns static add address-list=vpn_access match-subdomain=yes name=api.telegram.org type=FWD comment=Telegram
 /ip dns static add address-list=vpn_access match-subdomain=yes name=t.me type=FWD comment=Telegram
@@ -258,9 +236,6 @@
 /ip dns static add address-list=vpn_access match-subdomain=yes name=149.154.160.0/20 type=FWD comment=Telegram
 /ip dns static add address-list=vpn_access match-subdomain=yes name=91.108.0.0/16 type=FWD comment=Telegram
 /ip dns static add address-list=vpn_access match-subdomain=yes name=desktop.telegram.org type=FWD comment=Telegram
-
-
-# Whatsapp
 /ip firewall address-list add address=static.whatsapp.net list=vpn_access comment=WhatsApp
 /ip firewall address-list add address=g.whatsapp.net list=vpn_access comment=WhatsApp
 /ip firewall address-list add address=dit.whatsapp.net list=vpn_access comment=WhatsApp
@@ -287,7 +262,6 @@
 /ip firewall address-list add list=vpn_access address=3.33.252.61/32 comment=WhatsApp
 /ip firewall address-list add list=vpn_access address=15.197.206.217/32 comment=WhatsApp
 /ip firewall address-list add list=vpn_access address=15.197.210.208/32 comment=WhatsApp
-
 /ip dns static add address-list=vpn_access match-subdomain=yes name=static.whatsapp.net type=FWD comment=WhatsApp
 /ip dns static add address-list=vpn_access match-subdomain=yes name=g.whatsapp.net type=FWD comment=WhatsApp
 /ip dns static add address-list=vpn_access match-subdomain=yes name=dit.whatsapp.net type=FWD comment=WhatsApp
@@ -307,8 +281,6 @@
 /ip dns static add address-list=vpn_access match-subdomain=yes name=mmx-ds.cdn.whatsapp.net type=FWD comment=WhatsApp
 /ip dns static add address-list=vpn_access match-subdomain=yes name=mmg.whatsapp.net type=FWD comment=WhatsApp
 /ip dns static add address-list=vpn_access match-subdomain=yes name=wa.me type=FWD comment=WhatsApp
-
-# Discord
 /ip firewall address-list add address=dis.gd list=vpn_access comment="Discord"
 /ip firewall address-list add address=discord.gg list=vpn_access comment="Discord"
 /ip firewall address-list add address=discord.com list=vpn_access comment="Discord"
@@ -321,7 +293,6 @@
 /ip firewall address-list add address=media.discordapp.net list=vpn_access comment="Discord"
 /ip firewall address-list add address=gateway.discord.gg list=vpn_access comment="Discord"
 /ip firewall address-list add address=latency.discord.media list=vpn_access comment="Discord"
-
 /ip dns static add name=dis.gd address-list=vpn_access match-subdomain=yes type=FWD comment="Discord"
 /ip dns static add name=discord.gg address-list=vpn_access match-subdomain=yes type=FWD comment="Discord"
 /ip dns static add name=discord.com address-list=vpn_access match-subdomain=yes type=FWD comment="Discord"
@@ -334,8 +305,6 @@
 /ip dns static add name=media.discordapp.net address-list=vpn_access match-subdomain=yes type=FWD comment="Discord"
 /ip dns static add name=gateway.discord.gg address-list=vpn_access match-subdomain=yes type=FWD comment="Discord"
 /ip dns static add name=latency.discord.media address-list=vpn_access match-subdomain=yes type=FWD comment="Discord"
-
-# Spotify
 /ip firewall address-list add address=spotify.com list=vpn_access comment="Spotify"
 /ip firewall address-list add address=scdn.co list=vpn_access comment="Spotify"
 /ip firewall address-list add address=spotifycdn.map.fastly.net list=vpn_access comment="Spotify"
@@ -343,7 +312,6 @@
 /ip firewall address-list add address=i.scdn.co list=vpn_access comment="Spotify"
 /ip firewall address-list add address=mosaic.scdn.co list=vpn_access comment="Spotify"
 /ip firewall address-list add address=links.tospotify.com list=vpn_access comment="Spotify"
-
 /ip dns static add address-list=vpn_access match-subdomain=yes name=spotify.com type=FWD comment="Spotify"
 /ip dns static add address-list=vpn_access match-subdomain=yes name=scdn.co type=FWD comment="Spotify"
 /ip dns static add address-list=vpn_access match-subdomain=yes name=spotifycdn.map.fastly.net type=FWD comment="Spotify"
@@ -351,8 +319,6 @@
 /ip dns static add address-list=vpn_access match-subdomain=yes name=squadcdn.scdn.co.splitter-eip.akadns.net type=FWD comment="Spotify"
 /ip dns static add address-list=vpn_access match-subdomain=yes name=mosaic.scdn.co type=FWD comment="Spotify"
 /ip dns static add address-list=vpn_access match-subdomain=yes name=links.tospotify.com type=FWD comment="Spotify"
-
-# Sonos
 /ip firewall address-list add address=ws.sonos.com list=vpn_access comment=Sonos
 /ip firewall address-list add address=update.sonos.com list=vpn_access comment=Sonos
 /ip firewall address-list add address=thor.ws.sonos.com.edgekey.net list=vpn_access comment=Sonos
@@ -369,7 +335,6 @@
 /ip firewall address-list add address=voiceconfig.ws.sonos.com list=vpn_access comment=Sonos
 /ip firewall address-list add address=account.ws.sonos.com list=vpn_access comment=Sonos
 /ip firewall address-list add address=sonosradio.imgix.net list=vpn_access comment=Sonos
-
 /ip dns static add address-list=vpn_access match-subdomain=yes name=ws.sonos.com type=FWD comment=Sonos
 /ip dns static add address-list=vpn_access match-subdomain=yes name=update.sonos.com type=FWD comment=Sonos
 /ip dns static add address-list=vpn_access match-subdomain=yes name=thor.ws.sonos.com.edgekey.net type=FWD comment=Sonos
@@ -386,8 +351,6 @@
 /ip dns static add address-list=vpn_access match-subdomain=yes name=voiceconfig.ws.sonos.com type=FWD comment=Sonos
 /ip dns static add address-list=vpn_access match-subdomain=yes name=account.ws.sonos.com type=FWD comment=Sonos
 /ip dns static add address-list=vpn_access match-subdomain=yes name=sonosradio.imgix.net type=FWD comment=Sonos
-
-# Netflix
 /ip dns static add address-list=vpn_access match-subdomain=yes name=netflix.com type=FWD comment=Netflix
 /ip firewall address-list add address=netflix.com list=vpn_access comment=Netflix
 /ip dns static add address-list=vpn_access match-subdomain=yes name=www.netflix.com type=FWD comment=Netflix
