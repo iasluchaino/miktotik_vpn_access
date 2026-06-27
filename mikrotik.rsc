@@ -206,6 +206,12 @@
 :do { /ip dns static add address-list=vpn_access match-subdomain=yes name=cdn2cdn.com type=FWD comment="Kino.pub" } on-error={}
 :do { /ip dns static add address-list=vpn_access match-subdomain=yes name=s.pushbr.com type=FWD comment="Kino.pub" } on-error={}
 :do { /ip dns static add address-list=vpn_access match-subdomain=yes name=pushbr.com type=FWD comment="Kino.pub" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=srvkp.com type=FWD comment="kinopub API" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=pushbr.com type=FWD comment="kinopub push" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=alador.space type=FWD comment="kinopub alador" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=vjs.zencdn.net type=FWD comment="Video.js CDN" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=cdn.jsdelivr.net type=FWD comment="jsDelivr CDN" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=cdntogo.net type=FWD comment="cdntogo" } on-error={}
 
 # ===================== TELEGRAM =====================
 # ВНИМАНИЕ: подсети 149.154.160.0/20 и 91.108.0.0/16 — ТОЛЬКО в address-list, в DNS их нет (FWD не принимает CIDR)
