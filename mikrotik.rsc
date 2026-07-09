@@ -172,6 +172,7 @@
 :do { /ip firewall address-list add address=s-cdn.anthropic.com list=vpn_access comment="claude.ai" } on-error={}
 :do { /ip firewall address-list add address=login.tailscale.com list=vpn_access comment="tailscale" } on-error={}
 :do { /ip firewall address-list add address=packages.bacularis.app list=vpn_access comment="Bacularis" } on-error={}
+:do { /ip firewall address-list add address=getadblock.com list=vpn_access comment="Bacularis" } on-error={}
 :do { /ip dns static add address-list=vpn_access match-subdomain=yes name=theins.ru type=FWD comment="TheIns" } on-error={}
 :do { /ip dns static add address-list=vpn_access match-subdomain=yes name=nnmclub.to type=FWD comment="NNMClub" } on-error={}
 :do { /ip dns static add address-list=vpn_access match-subdomain=yes name=static.rutracker.cc type=FWD comment="RuTracker" } on-error={}
