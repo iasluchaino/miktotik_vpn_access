@@ -1,7 +1,3 @@
-# vpn_access :: полный список (все сервисы)
-# Каждая команда в :do/on-error — /import не падает на дублях и ошибках.
-# Битые DNS-FWD с IP/CIDR убраны (подсети только в firewall address-list).
-
 # ===================== YOUTUBE =====================
 :do { /ip firewall address-list add address=yt.be list=vpn_access comment="Youtube" } on-error={}
 :do { /ip firewall address-list add address=ggpht.com list=vpn_access comment="Youtube" } on-error={}
@@ -188,34 +184,7 @@
 :do { /ip dns static add address-list=vpn_access match-subdomain=yes name=login.tailscale.com type=FWD comment="tailscale" } on-error={}
 :do { /ip dns static add address-list=vpn_access match-subdomain=yes name=packages.bacularis.app type=FWD comment="Bacularis" } on-error={}
 
-# ===================== KINO.PUB =====================
-:do { /ip firewall address-list add address=kino.pub list=vpn_access comment="Kino.pub" } on-error={}
-:do { /ip firewall address-list add address=vjs.zencdn.net list=vpn_access comment="Kino.pub" } on-error={}
-:do { /ip firewall address-list add address=cdntogo.net list=vpn_access comment="Kino.pub" } on-error={}
-:do { /ip firewall address-list add address=cdn2cdn.com list=vpn_access comment="Kino.pub" } on-error={}
-:do { /ip firewall address-list add address=cdn.jsdelivr.net list=vpn_access comment="Kino.pub" } on-error={}
-:do { /ip firewall address-list add address=m.pushbr.com list=vpn_access comment="Kino.pub" } on-error={}
-:do { /ip firewall address-list add address=cdnservices.link list=vpn_access comment="Kino.pub" } on-error={}
-:do { /ip firewall address-list add address=s.pushbr.com list=vpn_access comment="Kino.pub" } on-error={}
-:do { /ip firewall address-list add address=pushbr.com list=vpn_access comment="Kino.pub" } on-error={}
-:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=kino.pub type=FWD comment="Kino.pub" } on-error={}
-:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=cdn.jsdelivr.net type=FWD comment="Kino.pub" } on-error={}
-:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=m.pushbr.com type=FWD comment="Kino.pub" } on-error={}
-:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=cdnservices.link type=FWD comment="Kino.pub" } on-error={}
-:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=vjs.zencdn.net type=FWD comment="Kino.pub" } on-error={}
-:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=cdntogo.net type=FWD comment="Kino.pub" } on-error={}
-:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=cdn2cdn.com type=FWD comment="Kino.pub" } on-error={}
-:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=s.pushbr.com type=FWD comment="Kino.pub" } on-error={}
-:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=pushbr.com type=FWD comment="Kino.pub" } on-error={}
-:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=srvkp.com type=FWD comment="kinopub API" } on-error={}
-:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=pushbr.com type=FWD comment="kinopub push" } on-error={}
-:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=alador.space type=FWD comment="kinopub alador" } on-error={}
-:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=vjs.zencdn.net type=FWD comment="Video.js CDN" } on-error={}
-:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=cdn.jsdelivr.net type=FWD comment="jsDelivr CDN" } on-error={}
-:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=cdntogo.net type=FWD comment="cdntogo" } on-error={}
-
 # ===================== TELEGRAM =====================
-# ВНИМАНИЕ: подсети 149.154.160.0/20 и 91.108.0.0/16 — ТОЛЬКО в address-list, в DNS их нет (FWD не принимает CIDR)
 :do { /ip firewall address-list add address=telegram.org list=vpn_access comment=Telegram } on-error={}
 :do { /ip firewall address-list add address=api.telegram.org list=vpn_access comment=Telegram } on-error={}
 :do { /ip firewall address-list add address=t.me list=vpn_access comment=Telegram } on-error={}
