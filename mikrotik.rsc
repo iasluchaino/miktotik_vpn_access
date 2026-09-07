@@ -422,3 +422,74 @@
 :do { /ip dns static add address-list=vpn_access match-subdomain=yes name=netflix.net type=FWD comment=Netflix } on-error={}
 :do { /ip dns static add address-list=vpn_access match-subdomain=yes name=geolocation.onetrust.com type=FWD comment=Netflix } on-error={}
 :do { /ip dns static add address-list=vpn_access match-subdomain=yes name=e35058.api14.akamaiedge.net type=FWD comment=Netflix } on-error={}
+
+# ===================== kino.pub =====================
+:do { /ip firewall address-list add address=kino.pub list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=kino.pub type=FWD comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=kino.watch list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=kino.watch type=FWD comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=kinopub.online list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=kinopub.online type=FWD comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=srvkp.net list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=srvkp.net type=FWD comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=srvkp.com list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=srvkp.com type=FWD comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=service-kp.com list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=service-kp.com type=FWD comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=smrtv.lol list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=smrtv.lol type=FWD comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=alador.space list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=alador.space type=FWD comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=cdnservices.link list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=cdnservices.link type=FWD comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=msxplayer.ru list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=msxplayer.ru type=FWD comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=staticpop.net list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=staticpop.net type=FWD comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=nearcache.net list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=nearcache.net type=FWD comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=cdntogo.net list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=cdntogo.net type=FWD comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=cdn2cdn.com list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=cdn2cdn.com type=FWD comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=cdn2site.com list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=cdn2site.com type=FWD comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=digital-cdn.net list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=digital-cdn.net type=FWD comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=cdn4t.xyz list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=cdn4t.xyz type=FWD comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=cdn32.lol list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=cdn32.lol type=FWD comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=flexcdn.cloud list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=flexcdn.cloud type=FWD comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=smarttvcdn.online list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=smarttvcdn.online type=FWD comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=cdn-service.space list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=cdn-service.space type=FWD comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=mycdn.video list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=mycdn.video type=FWD comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=alibaba-cdn.net list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=alibaba-cdn.net type=FWD comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=proxykp.xyz list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=proxykp.xyz type=FWD comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=teleos.club list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=teleos.club type=FWD comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=pushbr.com list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=pushbr.com type=FWD comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=m.pushbr.com list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=m.pushbr.com type=FWD comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=s.pushbr.com list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=s.pushbr.com type=FWD comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=vjs.zencdn.net list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=vjs.zencdn.net type=FWD comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=cdn.jsdelivr.net list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip dns static add address-list=vpn_access match-subdomain=yes name=cdn.jsdelivr.net type=FWD comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=213.183.36.0/22 list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=213.183.40.0/22 list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=213.183.44.0/22 list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=213.183.48.0/22 list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=93.189.56.0/22 list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=31.40.216.0/22 list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=89.34.238.0/24 list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=146.59.16.0/24 list=vpn_access comment="Kino.pub" } on-error={}
+:do { /ip firewall address-list add address=201.51.13.0/24 list=vpn_access comment="Kino.pub" } on-error={}
